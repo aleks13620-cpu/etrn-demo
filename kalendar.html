@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Календарь экспедитора до 01.03.2027: что сделать и до какого числа</title>
+<style>
+:root{
+  --bg:#0E0F13; --surface:#17191F; --text:#F2F3F5; --text-dim:#9AA0AA;
+  --accent:#FFB02E; --border:#2A2D35; --ok:#3FB57A; --accent-ink:#FFB02E;
+}
+@media (prefers-color-scheme:light){
+  :root{--bg:#fff;--surface:#F6F6F4;--text:#111;--text-dim:#555;--accent:#E8A021;--accent-ink:#9A5B00;--border:#CFCFCB;--ok:#1F7A4D}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.5 Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 24px}
+h1{font-size:22px;line-height:1.2;margin:0 0 16px;font-weight:700}
+h2{font-size:18px;line-height:1.25;margin:0 0 12px;font-weight:700}
+h3{font-size:16px;line-height:1.3;margin:0 0 8px;font-weight:700}
+@media (min-width:480px){h1{font-size:30px}h2{font-size:20px}}
+p{margin:0 0 8px}
+strong{font-weight:700}
+a{color:var(--text);text-decoration:underline;text-decoration-color:var(--text-dim);text-underline-offset:2px}
+.lead{margin:0 0 24px;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.key{display:flex;gap:16px;align-items:center;margin:0 0 32px;padding:16px;border:1px solid var(--accent);border-left-width:6px;border-radius:12px;background:var(--surface);break-inside:avoid}
+.key .big{flex:none;font-size:24px;line-height:1.1;font-weight:800;color:var(--accent-ink);letter-spacing:-.5px}
+.key h2{margin:0 0 4px;font-size:16px}
+.key p{margin:0}
+@media (max-width:479px){.key{flex-direction:column;align-items:flex-start;gap:8px}}
+@media (min-width:480px){.key .big{font-size:32px}}
+.zone{margin:0 0 32px}
+.zh{display:flex;align-items:center;gap:12px;margin:0 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border);color:var(--accent-ink)}
+.it{display:flex;flex-direction:column;gap:8px;margin:0 0 16px;padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:16px;break-inside:avoid}
+.dt{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--accent-ink)}
+.dt .n{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border:1px solid var(--accent);border-radius:12px;font-size:13px;color:var(--text)}
+@media (min-width:560px){
+  .it{flex-direction:row;gap:16px}
+  .dt{flex:none;width:150px;align-items:flex-start;flex-direction:column;gap:8px}
+  .bd{flex:1;min-width:0}
+}
+.bd p:last-child{margin:0}
+.nm{font-size:14px;color:var(--text-dim)}
+.chk{margin:0 0 32px}
+.chk ol{list-style:none;margin:0;padding:0;counter-reset:c}
+.chk li{display:flex;gap:12px;align-items:flex-start;margin:0 0 8px;counter-increment:c}
+.chk li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border:2px solid var(--accent);border-radius:4px}
+.nc{margin:0 0 32px}
+.nc ul{margin:0;padding-left:24px}
+.nc li{margin:0 0 4px}
+.srcs h2{font-size:16px}
+ul.src{font-size:13px;color:var(--text-dim);padding-left:16px;margin:0 0 16px}
+ul.src li{margin:0 0 6px;word-break:break-all}
+ul.src a{color:var(--text-dim)}
+.disc{font-size:14px;color:var(--text-dim)}
+hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+.foot{font-size:14px;color:var(--text-dim);margin:0}
+.ym{font-size:12px;color:#888;text-align:center;margin:24px 0 12px}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--text:#111;--text-dim:#444;--accent:#111;--accent-ink:#111;--border:#bbb;--ok:#111}
+  @page{size:A4;margin:10mm}
+  body{font-size:11px;line-height:1.3}
+  main{max-width:none;padding:0}
+  h1{font-size:20px;margin-bottom:8px}
+  h2{font-size:14px;margin-bottom:6px}
+  h3{font-size:12px;margin-bottom:3px}
+  p{margin-bottom:2px}
+  .lead{margin-bottom:10px;padding:8px;border-radius:0}
+  .key{margin-bottom:8px;padding:6px 8px;border-radius:0}
+  .key .big{font-size:22px}
+  .key h2{font-size:12px}
+  .zone{margin-bottom:8px}
+  .zh{margin-bottom:5px;padding-bottom:3px}
+  .it{flex-direction:row;gap:10px;margin-bottom:5px;padding:5px 8px;border-radius:0}
+  .dt{flex:none;width:105px;flex-direction:column;align-items:flex-start;gap:4px;font-size:11px}
+  .dt .n{min-width:18px;height:18px;font-size:10px}
+  .nm{font-size:10px}
+  .chk,.nc{margin-bottom:7px}
+  .chk li{margin-bottom:3px}
+  .chk li::before{width:11px;height:11px;margin-top:2px;border-width:1.5px}
+  .nc li{margin-bottom:2px}
+  ul.src{font-size:8px;line-height:1.25;padding-left:12px;margin-bottom:6px;column-count:2;column-gap:12px}
+  ul.src li{margin-bottom:2px}
+  .srcs h2{font-size:11px}
+  .disc{font-size:10px}
+  hr{margin:8px 0}
+  .foot{font-size:10px}
+  .ym{margin:6px 0 0;font-size:10px}
+  a{text-decoration:none;color:var(--text)}
+}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(113512674, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113512674" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<main>
+<h1>Календарь экспедитора до 01.03.2027: что сделать и до какого числа</h1>
+<p class="lead">Сроки из законов и постановлений для экспедитора на автомобильных перевозках. Впереди одна календарная дата, 01.03.2027. Остальные сроки уже наступили или считаются от события, от записи в реестре или от окончания договора. Нормы проверены по открытым источникам 05-07.10.2026.</p>
+<aside class="key"><div class="big">01.03.2027</div><div><h2>Одна дата, два события</h2><p>Нештрафуемый период по электронным перевозочным документам действует до 1 марта 2027 года. С 1 марта 2027 года начинает работать реестр перевозчиков грузов автомобильным транспортом. Обе даты стоят на одном дне. Заказчиков и перевозчиков удобно проверить за один раз, до этой даты.</p><p class="nm"><strong>Норма.</strong> <a href="https://mintrans.gov.ru/press-center/news/12933">Минтранс, 01.09.2026</a>; <a href="http://kremlin.ru/acts/assignments/orders/80308">Пр-1784 от 19.07.2026, п. 6</a>; <a href="https://www.consultant.ru/law/hotdocs/92225.html">520-ФЗ от 29.12.2025</a>; <a href="https://mintrans.gov.ru/press-center/news/12448">Минтранс, 24.02.2026</a>; <a href="https://mintrans.gov.ru/press-center/news/12701">Минтранс, 27.05.2026</a>.</p></div></aside>
+<section class="zone"><h2 class="zh">Что уже действует</h2><article class="it"><div class="dt"><span class="n">1</span>С 01.03.2026</div><div class="bd"><h3>Вы в реестре экспедиторов</h3><p><strong>Что требуется.</strong> Сведения об экспедиторе размещены в реестре уведомлений о транспортно-экспедиционной деятельности на «ГосЛоге». Право на деятельность предоставляется со дня размещения сведений в реестре. Реестр ведёт Ространснадзор.</p>
+<p><strong>Кого касается.</strong> Юридических лиц и ИП, которые оказывают транспортно-экспедиционные услуги или собираются начать.</p>
+<p><strong>Что сделать.</strong> Проверьте в личном кабинете на Госуслугах, что запись есть, и возьмите из неё дату размещения. Она нужна для пункта 2.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/cbb74cdbda502772e0795a573292355bc3695373/">87-ФЗ, ст. 2.2</a>; Постановление Правительства от 20.02.2026 № 173; <a href="https://mintrans.gov.ru/press-center/news/12448">Минтранс, 24.02.2026</a>.</p></div></article>
+<article class="it"><div class="dt"><span class="n">2</span>В течение 45 дней от записи в реестре</div><div class="bd"><h3>Заявление в ФСБ</h3><p><strong>Что требуется.</strong> Подать в орган ФСБ заявление о начале взаимодействия с уполномоченными органами не позднее 45-го календарного дня со дня размещения сведений в реестре.</p>
+<p><strong>Кого касается.</strong> Экспедитора.</p>
+<p><strong>Что сделать.</strong> От даты из пункта 1 отсчитайте 45 календарных дней и проверьте, подано ли заявление и есть ли подтверждение подачи.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.alta.ru/tamdoc/25ps1318/">Постановление Правительства от 29.08.2025 № 1318</a>, п. 4 (действует с 01.03.2026).</p></div></article>
+<article class="it"><div class="dt"><span class="n">3</span>С 01.09.2025</div><div class="bd"><h3>Хранение сведений 3 года</h3><p><strong>Что требуется.</strong> Хранить на территории России информацию, состав которой определён в п. 3 Правил (сведения о клиенте и его регистрации в информационном сервисе, факты входа, другие данные из систем, в которых вы оказываете экспедиторские услуги). Срок хранения 3 года со дня окончания исполнения договора транспортной экспедиции. Информацию нужно предоставлять ФСБ через круглосуточный удалённый доступ.</p>
+<p><strong>Кого касается.</strong> Экспедитора.</p>
+<p><strong>Что сделать.</strong> Выясните, где физически лежат эти данные в ваших системах и у ваших поставщиков. Хранение должно быть на территории России.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/f373fcdae66c4779450a56393408ed3b76cc7dfb/">87-ФЗ, ст. 4 п. 6</a>; <a href="https://www.alta.ru/tamdoc/25ps1317/">Постановление Правительства от 29.08.2025 № 1317</a>, Правила, п. 3-6 (в силу с 01.09.2025).</p></div></article>
+<article class="it"><div class="dt"><span class="n">4</span>С 01.09.2026</div><div class="bd"><h3>Накладная только в электронном виде</h3><p><strong>Что требуется.</strong> Транспортная накладная формируется в электронном виде. Бумага допустима в случаях, которые перечислил Минтранс в Приказе № 262 (физлицо для личных нужд, грузоотправитель и грузополучатель одно лицо, нет доступа к интернету, сбой при отправке в ГИС ЭПД и другие). Электронные перевозочные документы обязательны для перевозчиков, экспедиторов, грузоотправителей и грузополучателей. Перевозчик не вправе принять груз без накладной.</p>
+<p><strong>Кого касается.</strong> Экспедитора, его заказчиков и перевозчиков.</p>
+<p><strong>Что сделать.</strong> Посмотрите рейсы, где заказчик или перевозчик пока без электронной подписи. Основания «заказчик не подключён» в приказе нет. Что делать логисту при такой заявке, в <a href="https://aleks13620-cpu.github.io/etrn-demo/pamyatka.html">памятке</a>.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/document/cons_doc_LAW_72388/a004bd14ae27f7df2514daf7222a49a63ca2d629/">259-ФЗ, ст. 8 ч. 1 и 3</a>; <a href="https://www.consultant.ru/document/cons_doc_LAW_507282/5bdc78bf7e3015a0ea0c0ea5bef708a6c79e2f0a/">140-ФЗ, ст. 5 ч. 4</a>; <a href="https://www.consultant.ru/document/cons_doc_LAW_535799/2ffbc706832d057091234a2f593fff14dcb5aad7/">Приказ Минтранса от 01.06.2026 № 262</a> (в ред. от 02.09.2026 № 391); <a href="https://mintrans.gov.ru/press-center/news/12933">Минтранс, 01.09.2026</a>.</p></div></article>
+<article class="it"><div class="dt"><span class="n">5</span>С 01.09.2026</div><div class="bd"><h3>Поручение экспедитору в электронном виде</h3><p><strong>Что требуется.</strong> Поручение экспедитору, экспедиторская и складская расписки формируются в электронном виде. В поручении титул 1 формирует и подписывает заказчик, титул 2 экспедитор. Бумага допустима в случаях, которые перечислил Приказ Минтранса № 115 от 03.04.2026, перечень могут менять.</p>
+<p><strong>Кого касается.</strong> Экспедитора и его заказчиков.</p>
+<p><strong>Что сделать.</strong> Выясните у постоянных заказчиков, есть ли у них соглашение с оператором и подпись. Без этого титул 1 поручения они не подпишут.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/429a30a2269b01138f0f9aca3f2da1ee25acb5e4/">87-ФЗ, ст. 2 п. 3</a>; <a href="https://www.consultant.ru/document/cons_doc_LAW_535174/3ee3f4772c60b13a97aa715afe73ecb284958525/">Приказ Минтранса от 03.04.2026 № 115</a>; <a href="https://www.alta.ru/tamdoc/26ps0469/">Постановление Правительства от 27.04.2026 № 469</a>, п. 2.</p></div></article>
+<article class="it"><div class="dt"><span class="n">6</span>С 01.09.2026</div><div class="bd"><h3>Подпись и доверенность</h3><p><strong>Что требуется.</strong> Юридические лица и ИП подписывают УКЭП. Представитель по доверенности может использовать УКЭП или УНЭП, его полномочия подтверждает доверенность, в том числе машиночитаемая (МЧД). Проверять полномочия подписанта по существу ГИС ЭПД не обязана.</p>
+<p><strong>Кого касается.</strong> Всех, кто подписывает электронные перевозочные документы.</p>
+<p><strong>Что сделать.</strong> Проверьте, у кого из ваших сотрудников есть право подписи и оформлена ли для них МЧД.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/document/cons_doc_LAW_72388/34648008e394bce6f3be7a9963e1bbaef91208b1/">259-ФЗ, ст. 18.1 ч. 1 п. 2</a>; <a href="https://mintrans.gov.ru/press-center/news/12649">Минтранс, 04.05.2026</a>; <a href="https://mintrans.gov.ru/storage/app/media/epd/buklet-epd.pdf">буклет Минтранса «ЭПД: ответы на вопросы»</a>, раздел 3, вопросы 4 и 5.</p></div></article></section>
+<section class="zone"><h2 class="zh">До 01.03.2027</h2><article class="it"><div class="dt"><span class="n">7</span>До 01.03.2027</div><div class="bd"><h3>Нештрафуемый период</h3><p><strong>Что требуется.</strong> Ничего нового, это режим применения норм. Президент поручил МВД и Ространснадзору до 1 марта 2027 года объявлять устное замечание за бумажные перевозочные документы. Минтранс называет это «не отмена реформы и не отсрочка в правовом плане».</p>
+<p><strong>Кого касается.</strong> Всех участников перевозки.</p>
+<p><strong>Что сделать.</strong> Подключить заказчиков и перевозчиков, с которыми вы работаете постоянно. Обязанность действует с 01.09.2026. Сами решения МВД и Ространснадзора в открытых источниках мы не нашли.</p>
+<p class="nm"><strong>Норма.</strong> Поручение Президента <a href="http://kremlin.ru/acts/assignments/orders/80308">Пр-1784 от 19.07.2026, п. 6</a>; <a href="https://mintrans.gov.ru/press-center/news/12933">Минтранс, 01.09.2026</a>.</p></div></article></section>
+<section class="zone"><h2 class="zh">С 01.03.2027</h2><article class="it"><div class="dt"><span class="n">8</span>С 01.03.2027</div><div class="bd"><h3>Реестр перевозчиков</h3><p><strong>Что требуется.</strong> Перевозчик получает допуск к перевозкам грузов автомобильным транспортом со дня регистрации уведомления в реестре перевозчиков и включения в него сведений хотя бы об одном автомобиле. Порядок ведения реестра Минтранс 27.05.2026 разместил для общественного обсуждения.</p>
+<p><strong>Кого касается.</strong> Компании и ИП, которые перевозят грузы автомобильным транспортом, то есть ваших перевозчиков.</p>
+<p><strong>Что сделать.</strong> Составьте список постоянных перевозчиков с ИНН и выясните у них, готовятся ли они к регистрации. Итоговую редакцию порядка сверьте перед 01.03.2027. Нормы, по которой экспедитору нельзя привлекать перевозчика вне реестра, мы в источниках не нашли.</p>
+<p class="nm"><strong>Норма.</strong> <a href="https://www.consultant.ru/law/hotdocs/92225.html">520-ФЗ от 29.12.2025</a>; <a href="https://mintrans.gov.ru/press-center/news/12448">Минтранс, 24.02.2026</a>; <a href="https://mintrans.gov.ru/press-center/news/12701">Минтранс, 27.05.2026</a>.</p></div></article></section>
+<section class="chk"><h2>Проверьте у себя</h2><ol><li><span>В реестре экспедиторов есть ваша запись, дата размещения записана.</span></li><li><span>Заявление в ФСБ подано не позднее 45-го календарного дня от этой даты.</span></li><li><span>Вы знаете, где лежат сведения из п. 3 Правил, они хранятся в России и 3 года после окончания договора.</span></li><li><span>Заключено соглашение с оператором перевозочных документов, у руководителя есть УКЭП, у подписывающих сотрудников МЧД.</span></li><li><span>У постоянных заказчиков есть оператор и подпись для электронного поручения.</span></li><li><span>Постоянные перевозчики готовы подписать ЭТрН, водители знают, где её получить.</span></li><li><span>Список постоянных перевозчиков с ИНН под рукой для сверки с реестром.</span></li></ol></section>
+<section class="nc"><h2>Что не подтверждено</h2><ul><li>Сами решения МВД и Ространснадзора об устном замечании мы в открытых источниках не нашли.</li><li>Окончательный порядок ведения реестра перевозчиков и то, что он потребует от экспедитора, пока не подтверждены.</li><li>Срок, до которого действующий экспедитор должен был попасть в реестр экспедиторов, мы не проверяли.</li><li>Что будет с бумажными документами после 01.03.2027, в источниках не сказано.</li></ul></section>
+<section class="srcs"><h2>Источники (проверены 05-07.10.2026)</h2><ul class="src"><li>87-ФЗ «О транспортно-экспедиционной деятельности», ст. 2.2: <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/cbb74cdbda502772e0795a573292355bc3695373/">https://www.consultant.ru/document/cons_doc_LAW_43006/cbb74cdbda502772e0795a573292355bc3695373/</a></li><li>87-ФЗ, ст. 2 п. 3: <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/429a30a2269b01138f0f9aca3f2da1ee25acb5e4/">https://www.consultant.ru/document/cons_doc_LAW_43006/429a30a2269b01138f0f9aca3f2da1ee25acb5e4/</a></li><li>87-ФЗ, ст. 4: <a href="https://www.consultant.ru/document/cons_doc_LAW_43006/f373fcdae66c4779450a56393408ed3b76cc7dfb/">https://www.consultant.ru/document/cons_doc_LAW_43006/f373fcdae66c4779450a56393408ed3b76cc7dfb/</a></li><li>Минтранс, реестр экспедиторов и реестр перевозчиков, 24.02.2026: <a href="https://mintrans.gov.ru/press-center/news/12448">https://mintrans.gov.ru/press-center/news/12448</a></li><li>Постановление Правительства от 29.08.2025 № 1318: <a href="https://www.alta.ru/tamdoc/25ps1318/">https://www.alta.ru/tamdoc/25ps1318/</a></li><li>Постановление Правительства от 29.08.2025 № 1317: <a href="https://www.alta.ru/tamdoc/25ps1317/">https://www.alta.ru/tamdoc/25ps1317/</a></li><li>259-ФЗ, ст. 8: <a href="https://www.consultant.ru/document/cons_doc_LAW_72388/a004bd14ae27f7df2514daf7222a49a63ca2d629/">https://www.consultant.ru/document/cons_doc_LAW_72388/a004bd14ae27f7df2514daf7222a49a63ca2d629/</a></li><li>259-ФЗ, ст. 18.1: <a href="https://www.consultant.ru/document/cons_doc_LAW_72388/34648008e394bce6f3be7a9963e1bbaef91208b1/">https://www.consultant.ru/document/cons_doc_LAW_72388/34648008e394bce6f3be7a9963e1bbaef91208b1/</a></li><li>140-ФЗ, ст. 5 ч. 4: <a href="https://www.consultant.ru/document/cons_doc_LAW_507282/5bdc78bf7e3015a0ea0c0ea5bef708a6c79e2f0a/">https://www.consultant.ru/document/cons_doc_LAW_507282/5bdc78bf7e3015a0ea0c0ea5bef708a6c79e2f0a/</a></li><li>Приказ Минтранса от 01.06.2026 № 262: <a href="https://www.consultant.ru/document/cons_doc_LAW_535799/2ffbc706832d057091234a2f593fff14dcb5aad7/">https://www.consultant.ru/document/cons_doc_LAW_535799/2ffbc706832d057091234a2f593fff14dcb5aad7/</a></li><li>Приказ Минтранса от 03.04.2026 № 115: <a href="https://www.consultant.ru/document/cons_doc_LAW_535174/3ee3f4772c60b13a97aa715afe73ecb284958525/">https://www.consultant.ru/document/cons_doc_LAW_535174/3ee3f4772c60b13a97aa715afe73ecb284958525/</a></li><li>Постановление Правительства от 27.04.2026 № 469: <a href="https://www.alta.ru/tamdoc/26ps0469/">https://www.alta.ru/tamdoc/26ps0469/</a></li><li>Минтранс, 01.09.2026 (нештрафуемый период): <a href="https://mintrans.gov.ru/press-center/news/12933">https://mintrans.gov.ru/press-center/news/12933</a></li><li>Поручение Президента Пр-1784 от 19.07.2026, п. 6: <a href="http://kremlin.ru/acts/assignments/orders/80308">http://kremlin.ru/acts/assignments/orders/80308</a></li><li>Минтранс, 04.05.2026 (подписи): <a href="https://mintrans.gov.ru/press-center/news/12649">https://mintrans.gov.ru/press-center/news/12649</a></li><li>Буклет Минтранса «Электронные перевозочные документы (ЭПД): ответы на вопросы»: <a href="https://mintrans.gov.ru/storage/app/media/epd/buklet-epd.pdf">https://mintrans.gov.ru/storage/app/media/epd/buklet-epd.pdf</a></li><li>520-ФЗ от 29.12.2025, обзор КонсультантПлюс: <a href="https://www.consultant.ru/law/hotdocs/92225.html">https://www.consultant.ru/law/hotdocs/92225.html</a></li><li>Минтранс, порядок ведения реестра перевозчиков (проект), 27.05.2026: <a href="https://mintrans.gov.ru/press-center/news/12701">https://mintrans.gov.ru/press-center/news/12701</a></li></ul><p class="disc">Календарь не юридическая консультация; спорные случаи - с юристом.</p></section>
+<hr>
+<p class="foot">Алексей Симаков, ООО «ЗЕВС», +7 927 600-31-10, Telegram @aleksimakov, aleksey.etrn@yandex.com</p>
+</main>
+<p class="ym">Сайт использует Яндекс Метрику для подсчёта посещений.</p>
+</body>
+</html>
